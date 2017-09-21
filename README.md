@@ -1,2 +1,2 @@
-# trippalamb.github.io
-personal website
+# Tripp Lamb's Website
+coming soon...
