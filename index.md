@@ -1,3 +1,11 @@
+---
+layout:page
+title:Tripp Lamb's Website
+tagline: Coming soon...
+description: Resume and tutorial website
+---
+
+
 ## Welcome to GitHub Pages
 
 You can use the [editor on GitHub](https://github.com/trippalamb/trippalamb.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
