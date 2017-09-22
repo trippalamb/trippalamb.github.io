@@ -5,41 +5,18 @@ tagline: Coming soon...
 description: Resume and tutorial website
 ---
 
+##Hello, World.
 
-## Welcome to GitHub Pages
+I'm a **[chemist](go to UAHuntsville degree, RCEU research, lab tech )**. 
+I'm a **[programmer](go to Delta Research, Hudson Alpha, Caps, AMRDEC)**.
 
-You can use the [editor on GitHub](https://github.com/trippalamb/trippalamb.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+I like **[learning](go to skills)**. I like working on different various types of **[projects](go to personal projects)**. 
+But mostly I just like solving problems. It's even better if I can create a method for someone else to solve their problem.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+My main current project is creating a modular and reusable missile model for use in missile defense simulation at Delta Research Inc. [For more details or past projects go here.](go to past problems) 
 
-### Markdown
+I'm located in the beautiful [Rocket City](https://en.wikipedia.org/wiki/Huntsville,_Alabama)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/trippalamb/trippalamb.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
