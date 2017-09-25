@@ -5,19 +5,17 @@ tagline: Online Resume
 description: Resume and tutorial website
 ---
 
-##Hello, World.
+## Hello, World.
 
-I'm a [chemist](trippalamb.com/chemist). 
+I'm a [chemist](trippalamb.com/chemist).  
 I'm a [programmer](trippalamb.com/programmer).
 
-I like [learning](trippalamb.com/skils). 
-I like working on personal [projects](trippalamb.com/projects). 
-I like to [teach](trippalamb.com/tutorials) others.
-But mostly I like to solve problems. It's even better if I can create a method for someone else to solve their problem.
+I like [learning](trippalamb.com/skils).   
+I like working on personal [projects](trippalamb.com/projects).  
+I like to [teach](trippalamb.com/tutorials) others.  
+But mostly I like to solve problems. It's even better if I can create a method to help someone else solve their own problem.
 
-The problem I am currently working on is creating a modular and reusable missile model for use in missile defense simulation at Delta Research Inc. [For more details or past problems go here.](trippalamb.com/problems) 
-
-I like simple designs, simple solutions, and simple words when simple will do.
+My most current problem is creating a modular and reusable missile model for use in missile defense simulation at Delta Research Inc. [For more details or past problems go here.](trippalamb.com/problems) 
 
 I'm located in the beautiful [Rocket City](https://en.wikipedia.org/wiki/Huntsville,_Alabama)
 
