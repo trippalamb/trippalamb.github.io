@@ -1,4 +1,4 @@
-## Programming Work Experience
+## Professional Programming Experience
 
 ### Delta Research Inc.  
 Weapons Systems Analyst
