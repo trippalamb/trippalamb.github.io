@@ -1,4 +1,5 @@
-Delta Research Inc.  (Nov 2013 - Present)	Huntsville, AL  
+## Delta Research Inc.  
+(Nov 2013 - Present)	Huntsville, AL  
 
 Weapons Systems Analyst
 *	Perform safety debris analysis of ballistic missile interceptions.
