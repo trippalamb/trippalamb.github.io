@@ -7,8 +7,8 @@ description: Resume and tutorial website
 
 ## Hello, World.
 
-I'm a [chemist](https://trippalamb.github.io/chemist).  
 I'm a [programmer](https://trippalamb.github.io/programmer).  
+I'm a [chemist](https://trippalamb.github.io/chemist).  
 I'm located in the beautiful [Rocket City](https://en.wikipedia.org/wiki/Huntsville,_Alabama)
 
 I like [learning](https://trippalamb.github.io/skills). I like working on personal [projects](https://github.com/trippalamb?tab=repositories). I like to [teach](https://trippalamb.github.io/tutorials) others. But mostly I like to solve problems. It's even better if I can create a method to help someone else solve their own problem.
