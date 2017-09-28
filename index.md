@@ -5,8 +5,7 @@ tagline: Online Resume
 description: Resume and tutorial website
 ---
 
-<!--## Hello, World.-->
-<h2> Howdy, World. </h2>
+## Hello, World.
 
 I'm a [programmer](https://trippalamb.github.io/programmer).  
 I'm a [chemist](https://trippalamb.github.io/chemist).  
