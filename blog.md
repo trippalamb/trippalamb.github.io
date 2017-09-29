@@ -27,3 +27,9 @@ function cleanLivingRoom(cleaningLevel)
   
 end function
 ```
+
+Then I often get asked, "Why not just go to school for a programming degree then?"
+
+There is no good single answer to this question. It is a lot of different reasons, but before I get into those I want to talk about why I'm glad that I didn't. A chemistry degree is probably the greatest accomplishments of my life that I didn't really plan. I didn't plan to go to school and get a chemsitry degree. I intended to go an get a physics degree, then changed to a math degree, then a programming and biology dual major, then chemistry with a math minor, and then a math and sociolgy dual major because I read the Foundation series by Isaac Asimov, but by that point I'd have been delayed graduating so I stuck with the chemistry.
+
+As much as I would've liked to do all of the other things, I'm glad I stuck with chemistry. Chemistry shows you a view of the world that I feel like you just don't get from anything else.
