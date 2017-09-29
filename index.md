@@ -15,6 +15,6 @@ I like [learning](https://trippalamb.github.io/skills). I like working on person
 
 My current problem is creating a reasonably generic and modular missile model for use in missile defense simulation at Delta Research Inc. [For more details or past problems go here.](https://trippalamb.github.io/problems) 
 
-Well, that was the short version. If you are hooked and want to know more about me check out the above links or click [here](https://trippalamb.github.io/about) for an extended about me.
+Well, that was the short version. If you are hooked and want to know more about me check out the above links or click [here](https://trippalamb.github.io/blog) to go to my personal blog.
 
 I'm always interested in hearing about new opportunities so send me a line at trippalamb@gmail.com.
