@@ -1,12 +1,228 @@
 <!DOCTYPE html>
-<html>
-<body>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Gravity Game</title>
+		<script src="https://d3js.org/d3.v3.min.js"></script>
+		<style type="text/css">
+			/* No style rules here yet */		
+		</style>
+	</head>
+	<body>
+        <div id="svg" class="container"></div>
+	    <div id="svgdataurl"></div>
 
-<h1>Under Construction</h1>
 
-<div class="canvass">
+    
+		<script type="text/javascript">
 
-</div>
+            Array.prototype.divide = function(div){
+                var out = [];
+                for(var i = 0; i <this.length; i++){
+                    out[i] = this[i] / div;
+                }
+                return out;
+            }
 
-</body>
+            Array.prototype.multiply = function(mul){
+                var out = [];
+                for(var i = 0; i <this.length; i++){
+                    out[i] = this[i] * mul;
+                }
+                return out;
+            }
+
+            var Dot = function(x,y){
+                this.x = x;
+                this.y = y;
+                this.vx = 0.1;
+                this.vy = 0.1;
+                this.ax = 0;
+                this.ay = 0;
+            }
+
+            var Star = function(x, y, r, mass){
+                this.x = x;
+                this.y = y;
+                this.r = r;
+                this.mass = mass;
+            }
+            
+            var svg;
+            var dots = [];
+            var stars = [];
+            var time = 0;
+            var lastTime = getTick();
+            var dt = 0;
+            var refresh = 16;
+            var speed = 0.25
+            var gravConst = 1;
+            
+            
+            init();
+
+            setInterval(draw, refresh);
+		    //draw();draw();draw();
+            //draw();draw();draw();draw();draw();draw();draw();draw();draw();draw();draw();draw();
+           
+            function init(){
+                //Width and height
+			    var width = 1200;
+			    var height = 800;
+
+                //Create SVG element
+			    svg = d3.select("#svg")
+						    .append("svg")
+						    .attr("width", width)
+						    .attr("height", height);
+
+                dots.push(new Dot(50,50));
+                stars.push(new Star(300,200, 6, 1));
+                stars.push(new Star(400,275, 8, 2));
+                
+                svg.selectAll("circle")
+                   .data(stars)
+                   .enter()
+                   .append("circle")
+                   .attr("class", "star")
+                   .attr("cx", function(d) {
+				       return d.x;
+				   })
+				   .attr("cy", function(d) {
+				       return d.y;
+				   })
+                   .attr("r", function(d) {
+                       return d.r;
+                   })
+                   .style("fill", function(d){
+                       return "blue";
+                   });
+
+                svg.on('click', function(){
+                    var coords = d3.mouse(this);
+                    dots.push(new Dot(coords[0],coords[1]));
+                    svg.selectAll("circle.dot")
+                       .data(dots)
+                       .enter()
+                       .append("circle")
+                       .attr("class", "dot")
+                       .attr("cx", function(d) {
+				           return d.x;
+				       })
+				       .attr("cy", function(d) {
+				           return d.y;
+				       })
+				       .attr("r", 4)
+                       .style("fill", function(d){
+                           return "green";
+                       })
+                });
+            }
+
+			
+
+            function propagate(dt){
+
+                for(var i = 0; i <dots.length; i++){
+                    var dot = dots[i];
+
+                    var accGrav = calcGrav(dot, stars);
+                    var accDrag = calcDrag(dot);
+
+                    
+                    dot.ax = accGrav.x + accDrag.x;
+                    dot.ay = accGrav.y + accDrag.y;
+
+                    dot.x += dot.vx*dt + .5*dot.ax*dt*dt;
+                    dot.y += dot.vy*dt + .5*dot.ay*dt*dt;
+
+                    dot.vx += dot.ax*dt;
+                    dot.vy += dot.ay*dt;
+
+                    dots[i] = dot;
+                }
+                
+            }
+            
+            function calcDrag(dot){
+                var acc = {};
+                var vel = [dot.vx, dot.vy];
+                var velUnit = unit(vel);
+
+                var mag = magnitude(vel);
+                var temp = velUnit.multiply(-mag*mag*.0005);
+                acc.x = temp[0];
+                acc.y = temp[1];
+
+                return acc;
+
+            }
+
+            function calcGrav(dot, stars){
+                var acc = {};
+                acc.x = 0;
+                acc.y = 0;
+                
+                for(var i = 0; i < stars.length; i++){
+                    var xDiff = stars[i].x - dot.x;
+                    var yDiff = stars[i].y - dot.y;
+                    var distance = magnitude([xDiff, yDiff]);
+                    var magAcc = gravConst * stars[i].mass / distance;
+                    var distanceUnit = unit([xDiff, yDiff]);
+
+                    acc.x += magAcc * distanceUnit[0];
+                    acc.y += magAcc * distanceUnit[1];
+                }
+
+                return acc;
+            }
+
+            function unit(arr){
+                return arr.divide(magnitude(arr));
+            }
+
+            
+
+            function magnitude(arr){
+                var sum = 0;
+                for(var i = 0; i <arr.length; i++){
+                    sum += Math.pow(arr[i], 2);
+                }
+                
+                return Math.sqrt(sum);
+            }
+
+            function draw(){
+
+                propagate(speed*refresh);
+                svg.selectAll("circle.dot").remove();
+
+                svg.selectAll("circle.dot")
+                   .data(dots)
+                   .enter()
+                   .append("circle")
+                   .attr("class", "dot")
+                   .attr("cx", function(d) {
+				       return d.x;
+				   })
+				   .attr("cy", function(d) {
+				       return d.y;
+				   })
+				   .attr("r", 4)
+                   .style("fill", function(d){
+                       return "green";
+                   })
+
+
+            }
+
+
+            function getTick(){
+                return Date.now();
+            }
+
+			
+		</script>
+	</body>
 </html>
+
