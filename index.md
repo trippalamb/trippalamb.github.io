@@ -19,4 +19,4 @@ Well, that was the short version. If you are hooked and want to know more about 
 
 I'm always interested in hearing about new opportunities so send me a line at trippalamb@gmail.com.
 
-[game](https://trippalamb.github.io/views/game)
+[game](https://trippalamb.github.io/trippalamb.github.io/views/game.html)
