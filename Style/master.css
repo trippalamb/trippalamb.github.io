@@ -1,0 +1,21 @@
+.btn-cursor{
+  display: inline-block;
+  margin:0px 5px 0px 0px;
+  padding:5px;
+  border-radius: 40px;
+  border: 2px solid lightgray;
+  outline-style:none;
+}
+
+.btn-cursor:hover{
+  border: 2px solid black;
+}
+
+.rounded-outline{
+  background-color: lightgray;
+}
+
+.game-board{
+  /*background-color: #252521;*/
+  
+}
