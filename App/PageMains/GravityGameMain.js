@@ -20,7 +20,7 @@ function mainGravityGame(){
   function initHTML(){
 	  
     $("#btn-clearComets").on("click", function(){
-      svg.selectAll("circle.comet").remove();
+	    comets = [];
     });
 	  
     $(".btn-cursor").on("click", function(){
