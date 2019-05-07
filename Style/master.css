@@ -1,4 +1,4 @@
-.btn-cursor{
+.btn-rounded{
   display: inline-block;
   margin:0px 5px 0px 0px;
   padding:5px;
@@ -7,7 +7,7 @@
   outline-style:none;
 }
 
-.btn-cursor:hover{
+.btn-rounded:hover{
   border: 2px solid black;
 }
 
