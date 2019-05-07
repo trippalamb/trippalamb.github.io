@@ -78,7 +78,9 @@ function mainGravityGame(){
        })
        .style("fill", function(d){
          return "blue";
-       });
+       })
+       .on("mouseover", handleMouseOver)
+       .on("mouseout", handleMouseOut);
 
        svg.on('click', createComet);
     }
