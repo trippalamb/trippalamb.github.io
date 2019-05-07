@@ -19,3 +19,9 @@
   /*background-color: #252521;*/
   
 }
+
+#global-commands{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
