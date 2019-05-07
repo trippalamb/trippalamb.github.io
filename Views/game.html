@@ -4,32 +4,30 @@
 		<meta charset="utf-8">
 		<title>Gravity Game</title>
 		<link rel="stylesheet" href="../Style/master.css">
-		<!--<link rel="stylesheet" href="../Style/master.css">-->
 		<script src="https://d3js.org/d3.v5.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 
-    <!--<script src="http://trippalamb.com/App/MathExt.js"></script>
-    <script src="http://trippalamb.com/App/Objects/comet.js"></script>
-    <script src="http://trippalamb.com/App/Objects/star.js"></script>
-		<script src="http://trippalamb.com/App/PageMains/GravityGameMain.js"></script>-->
+		<script src="../ExtLibs/jscolor.js"></script>
 		<script src="../App/MathExt.js"></script>
-    <script src="../App/Objects/comet.js"></script>
-    <script src="../App/Objects/star.js"></script>
+                <script src="../App/Objects/comet.js"></script>
+                <script src="../App/Objects/star.js"></script>
 		<script src="../App/PageMains/GravityGameMain.js"></script>
 		<style type="text/css">
 			/* No style rules here yet */
 		</style>
 	</head>
 	<body>
-					<div id="svg" class="container game-board">
-					<div id="cursor-buttons">
-						<div id="btn-createComet" class="btn-cursor rounded-outline"><label>Comet</label></div>
-						<div id="btn-createStar" class="btn-cursor"><label>Create Star</label></div>
-						<!--<div id="btn-selectStar" class="btn-cursor"><label>Select Star</label></div>-->
-					</div>
-				</div>
-
-				<div id="svgdataurl"></div>
+	    <div id="svg" class="container game-board">
+		<div id="cursor-buttons">
+		    <div id="btn-createComet" class="btn-cursor rounded-outline"><label>Comet</label></div>
+		    <div id="btn-createStar" class="btn-cursor"><label>Create Star</label></div>
+		    <!--<div id="btn-selectStar" class="btn-cursor"><label>Select Star</label></div>-->
+		</div>
+	        <div id="cursor-form">
+		    Color: <input class="jscolor" value="ab2567">
+	        </div>
+	    </div>
+            <div id="svgdataurl"></div>
 
 
 
