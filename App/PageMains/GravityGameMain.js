@@ -18,6 +18,11 @@ function mainGravityGame(){
   }
 
   function initHTML(){
+	  
+    $("#btn-clearComets").on("click", function(){
+      svg.selectAll("circle.comet").remove();
+    });
+	  
     $(".btn-cursor").on("click", function(){
       $(".btn-cursor").removeClass("rounded-outline");
       $(this).addClass("rounded-outline");
