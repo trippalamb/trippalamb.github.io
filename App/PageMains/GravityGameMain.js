@@ -23,6 +23,10 @@ function mainGravityGame(){
 	    comets = [];
     });
 	  
+	  $("#btn-clearStars").on("click", function(){
+	    stars = [];
+    });
+	  
     $(".btn-cursor").on("click", function(){
       $(".btn-cursor").removeClass("rounded-outline");
       $(this).addClass("rounded-outline");
@@ -130,7 +134,7 @@ function mainGravityGame(){
 
     function createStar(){
       var coords = d3.mouse(this);
-      stars.push(new Star(coords[0], coords[1], 2));
+      stars.push(new Star(coords[0], coords[1], $('#txt-mass').val()));
       svg.selectAll("circle.star")
          .data(stars)
          .enter()
