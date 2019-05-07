@@ -105,7 +105,7 @@ function mainGravityGame(){
 
     function createComet(){
       var coords = d3.mouse(this);
-      comets.push(new Comet(coords[0],coords[1], "red"));
+      comets.push(new Comet(coords[0],coords[1], $('#txt-color').val()));
       svg.selectAll("circle.comet")
          .data(comets)
          .enter()
