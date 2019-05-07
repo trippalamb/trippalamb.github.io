@@ -23,8 +23,9 @@ function mainGravityGame(){
 	    comets = [];
     });
 	  
-	  $("#btn-clearStars").on("click", function(){
+    $("#btn-clearStars").on("click", function(){
 	    stars = [];
+      svg.selectAll("circle.star").remove();
     });
 	  
     $(".btn-cursor").on("click", function(){
