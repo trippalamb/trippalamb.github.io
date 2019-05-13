@@ -1,7 +1,8 @@
 var gravConst = 1;
 
 class Comet {
-  constructor(x, y, color){
+  constructor(id, x, y, color){
+    this.id = id;
     this.color = color;
     this.state = new State(x, y);
     //this.rkf = new RKF();
@@ -22,7 +23,7 @@ class State{
   propagate(dt, stars){
     var accGrav = this.calcGrav(stars);
     var accDrag = this.calcDrag();
-     
+
     this.px.val += this.vx.val*dt + .5*this.ax.val*dt*dt;
     this.py.val += this.vy.val*dt + .5*this.ay.val*dt*dt;
     this.vx.val += this.ax.val*dt;
@@ -47,7 +48,7 @@ class State{
     var acc = {};
     acc.x = 0;
     acc.y = 0;
-    
+
     for(var i = 0; i < stars.length; i++){
         var xDiff = stars[i].x - this.px.val;
         var yDiff = stars[i].y - this.py.val;
