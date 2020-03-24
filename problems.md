@@ -1,19 +1,5 @@
 ## Current Problems
 
-### Reasonably Generic and Modular Missile Model
-Language: Fortran  
-Owner: Delta Research  
-
-Abstract: The current missile model only allowed for 1 missile to be run at a time due to relying on global variables and various other old Fortran practices. The methods had also become bloated due to its need to be able to represent multiple different missile types. These two main issues have been solved by rewriting the Fortran 77 code as fully object oriented Fortran 2003 code, removing all references to non-constant global variables, and utilizing object inheritance and function pointers.
-
-Interesting Points
-* I gained experience managing a project with higher level engineers than myself
-* I completely redesigned the original Fortran 77 code to be rewritten as a fully Object Oriented Fortran Project
-* I have gained an understanding of 
-  * GNC (guidance, navigation, and control) modeling and simulation
-  * Runge Kutta 4 pass integration
-
-
 ### Osme Programmming Language Standards and Compiler
 Langauge: JS  
 Owner: myself
@@ -27,6 +13,3 @@ Interesting Points
   * Gained a deeper understanding of the grammar and syntaxes of programming languages in general
   * Learned to use MarkDown
 
-## Past Problems
-
-Past Problems and Projects Coming soon...
