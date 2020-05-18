@@ -4,8 +4,6 @@ title:Tripp Lamb's Website
 tagline: Online Resume
 description: Resume and tutorial website
 ---
-## UPDATE!
-I made a map of the coronavirus spread over time for Alabama and it's counties. You can see it [here](https://trippalamb.github.io/coronavirus-spread-alabama)
 
 ## Hello, World.
 
