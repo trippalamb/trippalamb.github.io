@@ -1,0 +1,93 @@
+#resume > table, tr, td{
+    border:solid;
+    border-collapse:collapse;
+    stroke-width: 4px;
+    border-color: #586e75;
+/*    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='%23586E75FF' stroke-width='4' stroke-dasharray='16%2c 14' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+*/}
+
+#expertise-table > table tr td {
+    border: none;
+}
+
+td {
+    padding: 10px;
+}
+
+td > h2{
+    margin: 0px;
+    color:#dc322f;
+}
+
+tr#experience > td{
+    vertical-align:top;
+}
+
+tr#experience > td > h2{
+    margin-top: 200px;
+}
+
+#education:hover > td.title {
+    background-color: #fdf6e3;
+    color: #839496;
+    transition: 0.4s;
+}
+
+#education:hover > td.content {
+    background-color: #073642;
+    transition: 0.4s;
+}
+
+#expertise:hover > td.title {
+    background-color: #fdf6e3;
+    color: #839496;
+    transition: 0.4s;
+}
+
+#expertise:hover > td.content {
+    background-color: #073642;
+    transition: 0.4s;
+}
+
+#experience:hover > td.title {
+    background-color: #fdf6e3;
+    color: #839496;
+    transition: 0.4s;
+}
+
+#experience:hover > td.content {
+    background-color: #073642;
+    transition: 0.4s;
+}
+
+#examples:hover > td.title {
+    background-color: #fdf6e3;
+    color: #839496;
+    transition: 0.4s;
+}
+
+#examples:hover > td.content {
+    background-color: #073642;
+    transition: 0.4s;
+}
+
+.place {
+    color: #cb4b16;
+}
+
+.date {
+    color: #6c71c4;
+}
+
+.location {
+    color: #2aa198;
+}
+
+.position {
+    color: #859900;
+}
+
+.label {
+    color: #268bd2;
+}
+
