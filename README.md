@@ -1,2 +1,2 @@
-# trippalamb.github.io
-Personal Website
+# trippalamb.com
+Personal Resume Website
